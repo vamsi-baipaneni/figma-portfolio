@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Project Name",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem",
+        "skills": [
+            "emo", "evadiki", "telusu", "plij giv me job", "heheehee"
+        ],
+        "link": "https://www.google.com",
+        "img": "assets/projects/project.png"
+    },
+    {
+        "title": "Project Name",
+        "description": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem  lorem lorem",
+        "skills": [
+            "emo", "evadiki", "telusu", "plij giv me job", "heheehee"
+        ],
+        "link": "https://www.google.com",
+        "img": "assets/projects/project.png"
+    }
+]

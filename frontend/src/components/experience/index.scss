@@ -1,0 +1,129 @@
+.exp-container {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .exp-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  .exp-title::before,
+  .exp-title::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid black;
+  }
+
+  .exp-title::before {
+    margin-right: 10px;
+  }
+
+  .exp-title::after {
+    margin-left: 10px;
+  }
+
+  .exp-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .exp-block {
+      display: flex;
+      gap: 30px;
+
+      .exp-block-part1 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 25px;
+          font-weight: 300;
+        }
+
+        .exp-company {
+          margin-top: -20px;
+          font-size: 18px;
+          font-weight: 300;
+          margin-bottom: 10px;
+        }
+
+        .line-horizontal {
+          height: 1px;
+          background-color: black; /* Or any color you prefer */
+          width: 100%;
+        }
+
+        .exp-period {
+          margin-top: 15px;
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+
+      .line-vertical {
+        width: 1px;
+        background-color: black; /* Or any color you prefer */
+        height: 100%;
+      }
+
+      .exp-block-part2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: square;
+        padding-inline-start: 0px;
+
+        li {
+          text-wrap: wrap;
+        }
+      }
+    }
+
+    .exp-block:nth-of-type(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .exp-container {
+    height: 100%;
+
+    .exp-contents {
+      flex-direction: column;
+
+      .exp-block {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+
+        .exp-block-part1 {
+          align-items: center;
+        }
+
+        .line-horizontal {
+          display: none;
+        }
+      }
+
+      .exp-block:nth-of-type(2n) {
+        flex-direction: column;
+      }
+
+      .line-vertical {
+        display: none;
+      }
+    }
+  }
+}
